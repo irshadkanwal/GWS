@@ -1,0 +1,21 @@
+export type UserDetailsType = {
+  id: number;
+  user_id: number;
+  journey: string;
+  street_address: string;
+  address_line?: string | null;
+  city: string;
+  state: string;
+  zip_code: string;
+  privacy_settings?: string[] | null;
+  terms_policy?: boolean | null;
+  creating_for?: "myself" | "someone_else";
+  recipient_name?: string | null;
+  recipient_email?: string | null;
+  products?: number[];
+  services?: number[];
+  cash_donation?: string | number | null;
+  created_at?: string;
+  updated_at?: string;
+  attachments?: string[];
+};

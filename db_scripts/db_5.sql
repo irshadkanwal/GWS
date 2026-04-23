@@ -1,0 +1,5 @@
+ALTER TABLE "users"
+ADD COLUMN IF NOT EXISTS is_stripe_linked BOOLEAN DEFAULT false;
+
+ALTER TABLE "users"
+ADD COLUMN IF NOT EXISTS stripe_account_id VARCHAR(255) UNIQUE;
